@@ -1,25 +1,23 @@
-﻿using W6_assignment_template.Interfaces;
+﻿using W6_assignment_template.CharacterTemplates;
+using W6_assignment_template.Interfaces;
 
 namespace W6_assignment_template.Models
 {
-    public class Ghost : CharacterBase, IFlyable
+    public class Ghost : FlyingCharacter
     {
-        public string Treasure { get; set; }
-
-        public Ghost(string name, string type, int level, int hp, string treasure)
-            : base(name, type, level, hp)
+        public Ghost(string name, string type, int level, int hp, string treasure) : base(name, type, level, hp, treasure)
         {
-            Treasure = treasure;
-        }
 
-        public void Fly()
-        {
-            Console.WriteLine($"{Name} flies rapidly through the air.");
         }
 
         public override void UniqueBehavior()
         {
-            throw new NotImplementedException();
+            System.Console.WriteLine($"{Name} phases through the wall.");
+        }
+
+        public override void Fly()
+        {
+            System.Console.WriteLine($"{Name} flies rapidly through the air.");
         }
     }
 }

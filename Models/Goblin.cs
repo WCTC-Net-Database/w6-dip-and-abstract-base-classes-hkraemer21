@@ -1,4 +1,6 @@
-﻿namespace W6_assignment_template.Models
+﻿using W6_assignment_template.CharacterTemplates;
+
+namespace W6_assignment_template.Models
 {
     public class Goblin : CharacterBase, ILootable
     {
@@ -12,7 +14,7 @@
 
         public override void UniqueBehavior()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} guffaws obnoxiously.");
         }
     }
 

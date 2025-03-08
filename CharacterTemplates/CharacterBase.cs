@@ -1,6 +1,7 @@
 ﻿using W6_assignment_template.Interfaces;
+using W6_assignment_template.Models;
 
-namespace W6_assignment_template.Models
+namespace W6_assignment_template.CharacterTemplates
 {
     public abstract class CharacterBase : ICharacter
     {

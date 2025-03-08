@@ -1,4 +1,5 @@
 using System.Text.Json;
+using W6_assignment_template.CharacterTemplates;
 using W6_assignment_template.Models;
 
 namespace W6_assignment_template.Data
@@ -48,6 +49,14 @@ namespace W6_assignment_template.Data
                 if (existingCharacter is Goblin goblin && character is Goblin updatedGoblin)
                 {
                     goblin.Treasure = updatedGoblin.Treasure;  // Specific to Goblin
+                }
+                if (existingCharacter is Ghost ghost && character is Ghost updatedGhost)
+                {
+                    ghost.Treasure = updatedGhost.Treasure;  // Specific to Ghost
+                }
+                if (existingCharacter is Mimic mimic && character is Mimic updatedMimic)
+                {
+                    mimic.Gold = updatedMimic.Gold;  // Specific to Mimic
                 }
 
                 SaveData();

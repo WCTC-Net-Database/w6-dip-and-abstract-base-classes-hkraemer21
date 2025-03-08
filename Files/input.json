@@ -47,5 +47,13 @@
     "Level": 2,
     "HP": 8,
     "Treasure": null
+  },
+  {
+    "$type": "W6_assignment_template.Models.Mimic",
+    "Name": "Treasure Chest",
+    "Type": "Mimic",
+    "Level": 2,
+    "HP": 12,
+    "Gold": 100
   }
 ]
